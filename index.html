@@ -11,7 +11,7 @@
 <body>
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
-a    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
     <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
     <!--Environment extension-->
     <title>360 molinari</title>
@@ -22,13 +22,15 @@ a    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/di
         <a-entity id="camera" camera position="0 3 0" look-controls></a-entity>
       </a-entity>
       <a-assets>
-       
+        <audio id="river" src="./fire-sound-effect-in-high-quality.mp3" preload="auto"></audio>
+
           <img id="my-image" src="infierno.png">
-          <img id="fire" src="fire1.png">
           <img id="fire2" src="fire2.png">
         
-        <img id="sky" src="sky.png">
+       
+
  </a-assets>
+ <a-entity sound="src: #river; autoplay: true"></a-entity>
       <a-sky  color=	"#8B4513"  animation="property: rotation; to: 0 360 0; dur: 100000; easing: linear; loop: true"></a-sky>
       <a-image position="0 4.413 -15.5"  scale="10 10 10 " src="#fire2"  animation="property: position; to: 0 5 -15.5; dur: 2000; easing: linear;  dir: alternate; loop: true" ></a-image>
       <a-image position="-11.330 3 -11.469"  rotation="0.000 44.492 0" scale="10 10 10 " src="#fire2"  animation="property: position; to: -11.330 5 -11.469; dur: 2000; easing: linear;  dir: alternate; loop: true" ></a-image>
