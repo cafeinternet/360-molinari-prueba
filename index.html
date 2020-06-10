@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>360 molinari</title>
+    <link rel="icon" type="control-de-ciber-cliente.png">
+
+    
+</head>
+<body>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
+a    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+    <!--Environment extension-->
+    <title>360 molinari</title>
+
+
+    <a-scene >
+      <a-entity id="rig" movement-controls kinematic-body>
+        <a-entity id="camera" camera position="0 3 0" look-controls></a-entity>
+      </a-entity>
+      <a-assets>
+       
+          <img id="my-image" src="infierno.png">
+          <img id="fire" src="fire1.png">
+          <img id="fire2" src="fire2.png">
+        
+        <img id="sky" src="sky.png">
+ </a-assets>
+      <a-sky  color=	"#8B4513"  animation="property: rotation; to: 0 360 0; dur: 100000; easing: linear; loop: true"></a-sky>
+      <a-image position="0 4.413 -15.5"  scale="10 10 10 " src="#fire2"  animation="property: position; to: 0 5 -15.5; dur: 2000; easing: linear;  dir: alternate; loop: true" ></a-image>
+      <a-image position="-11.330 3 -11.469"  rotation="0.000 44.492 0" scale="10 10 10 " src="#fire2"  animation="property: position; to: -11.330 5 -11.469; dur: 2000; easing: linear;  dir: alternate; loop: true" ></a-image>
+
+
+      <a-image position="-7.885 3.1 -14.918"  rotation="0.000 24.952 0" scale="10 10 10 " src="#fire2"  animation="property: position; to: -7.885 2.391 -14.918; dur: 2000; easing: linear;  dir: alternate; loop: true" ></a-image>
+      <a-image position="7.660 3.5 -14.918"  rotation="0.000 -32.338 0" scale="10 10 10 " src="#fire2"  animation="property: position; to: 7.660 2.5 -14.918; dur: 2000; easing: linear;  dir: alternate; loop: true" ></a-image>
+
+      <a-image position="13.556 3.470 -9.163"  rotation="0.000 -59.522 0" scale="10 10 10 " src="#fire2"  animation="property: position; to: 13.556 4.470 -9.163; dur: 2000; easing: linear;  dir: alternate; loop: true" ></a-image>
+
+      <a-image position="-13.63435 4.77126 -4.80959" rotation="0 90.64478797867189 0" scale="10 10 10" src="#fire2" animation="property: position; to: -13.63435 3.77126 -4.80959; dur: 2000; easing: linear; dir: alternate; loop: true" ></a-image>
+        <!-- Using the asset management system. -->
+        <a-image position="0 5 -15"  scale="10 10 10 " src="#my-image"  animation="property: position; to: 0 4.413 -15 ; dur: 2000; easing: linear;  dir: alternate; loop: true" ></a-image>
+        <a-image position="-13.09978 3.16119 2.65385" rotation="0.6371290681854754 90.3623197856724 -1.1459155902616465" scale="10 10 10" src="#fire2" animation="property: position; to: -13.09978 4.16119 2.65385; dur: 2000; easing: linear; dir: alternate; loop: true" ></a-image>
+    
+
+
+        <a-image position="13.985 3.79263 2.65385" rotation="0.6371290681854754 90.3623197856724 -1.1459155902616465" scale="10 10 10" src="#fire2" animation="property: position; to: 13.985 4.79263 2.65385; dur: 2000; easing: linear; dir: alternate; loop: true"></a-image>
+
+        <a-image position="13.93435 4.13982 -4.80959" rotation="0 90.64478797867189 0" scale="10 10 10" src="#fire2" animation="property: position; to: 13.93435 3s.13982 -4.80959; dur: 2000; easing: linear; dir: alternate; loop: true" ></a-image>
+
+
+
+        <a-image position="-9.19362 3.40146 9.16151" rotation="0 -33.61715271371079 0" scale="10 10 10" src="#fire2" animation="property: position; to: -9.19362 4.40146 9.16151; dur: 2000; easing: linear; dir: alternate; loop: true" ></a-image>
+
+        <a-image position="-0.84994 4.53083 11.64281" scale="10 10 10" src="#fire2" animation="property: position; to: -0.84994 3.53083 11.64281; dur: 2000; easing: linear; dir: alternate; loop: true" ></a-image>
+
+        <a-image position="8.16945 2.95768 9.43417" rotation="0 24.952 0" scale="10 10 10" src="#fire2" animation="property: position; to: 8.16945 3.95768 9.43417; dur: 2000; easing: linear; dir: alternate; loop: true" ></a-image>
+        <a-image position="11.64732 3.95768 9.43417" rotation="0 53.77208907302776 0" scale="10 10 10" src="#fire2" animation="property: position; to: 11.64732 2.95768 9.43417; dur: 2000; easing: linear; dir: alternate; loop: true" ></a-image>
+
+
+        <a-image position="0 4.64593 11.1785" scale="10 10 10" src="#my-image" animation="property: position; to: 0 3.64593 11.1785; dur: 2000; easing: linear; dir: alternate; loop: true" ></a-image>
+
+      <a-plane static-body color=	"#CD853F"  width="30" height="30" rotation="-90 0 0" position="0 0 0"  ></a-plane>
+      <a-plane static-body scale="0.263 1.000 1.000" width="30" height="30" rotation="0 -90.00021045914971 90.00021045914971" position="14.6926 2.94863 0.00007" material="opacity: 0; transparent: true" ></a-plane>
+      <a-plane static-body scale="0.263 1 1" width="30" height="30" rotation="0 89.81399917573219 90.00021045914971" position="-15.07844 2.94863 0.00007" material="opacity: 0; transparent: true" ></a-plane>
+      <a-plane static-body scale="0.263 1 1" width="30" height="30" rotation="0 0 90.00021045914971" position="-0.03086 2.94863 -15.36424" material="opacity: 0; transparent: true" ></a-plane>
+      <a-plane static-body scale="0.263 1 1" width="30" height="30" rotation="-0.8594366926962348 -179.98609697342116 89.08519686032578" position="-0.03086 2.94863 14.73031" material="opacity: 0; transparent: true" ></a-plane>
+      <a-light type="ambient" intensity="0.800" color="#666"></a-light>
+      <a-light type="directional" intensity="0.800" position="2 4 4"></a-light>
+      <a-light type="point" intensity="0.500" position="-16.45976 12.75024 4" ></a-light>
+
+    </a-scene>
+</body>
+</html>
